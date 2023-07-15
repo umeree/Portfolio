@@ -36,7 +36,7 @@ body{
 .navbar a.active{
     color: #fcd07a;
 } 
-.home {
+#home {
     background-color: #191d28;
     display: flex;
     height: 50vh;
@@ -70,16 +70,17 @@ body{
     width: 200px;
     height: 50px;
     background-color: transparent;
-    border-radius: 10px;
+    border-radius: 20px;
     
 }
 .btn-section a{
-    width: 200px;
+    width: 150px;
     height: 100%;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 6px;
     color: #fcd07a ;
     border: 2px solid #fcd07a ;
     font-size: 20px;
@@ -88,8 +89,8 @@ body{
 .btn-section a:hover {
     background-color: #fcd07a;
     color:#f4f7f8 ;
-    border-style: none;
-    transition: .5s;
+    /* border-style: none; */
+    transition: .6s;
 }
 .home-sci {
     position: absolute;
@@ -125,7 +126,7 @@ body{
     transition: 0.8s;
     opacity: .8;
 }
-.about{
+#about{
     background-color: #161922;
     display: flex;
     flex-direction: row-reverse;
@@ -133,7 +134,7 @@ body{
     align-items: center;
     padding: 0 10%;
 }
-.services {
+#services {
     background-color: #191d28;
     display: flex;
     flex-direction: column;
@@ -142,4 +143,171 @@ body{
     /* align-items: center; */
     padding: 0 10%;
 }
-    
+.service-content {
+    margin-top: 20px;
+}
+.service-content h1 {
+    font-size: 45px;
+    font-weight: 900;
+    color: #fcd07a;
+}
+.service-content p {
+    font-size: 15px;
+}
+.service-section{
+    display: flex;
+    margin-top: 20px;
+    /* background-color: black; */
+    /* justify-content: space-around; */
+    justify-content: space-around;
+
+}
+.service1 {
+    margin: 20px;
+    padding: 60px;
+    width: 250px;
+    height: 250px;
+    /* justify-content: center;
+    align-items: center; */
+    border-radius: 20px;
+    background-color: #161922;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+}
+.service2 {
+    margin: 20px;
+    width: 250px;
+    padding: 60px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: #161922;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+}
+.service3 {
+    margin: 20px;
+    padding: 60px;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: #161922;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+}
+.service1 .service1-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service1 .service1-content h1 {
+    padding: 100px 10px 10px 10px;
+    color: #fcd07a;
+}
+.service1 .service1-content p{
+    font-size: 11px;
+    padding: 10px;
+}
+.service2 .service2-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service2 .service2-content h1 {
+    padding: 100px 10px 10px 10px;
+    color: #fcd07a;
+}
+.service2 .service2-content p{
+    font-size: 11px;
+    padding: 10px;
+}
+#skills{
+    background-color: #161922;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+}
+.skills-content h1 {
+    color: #fcd07a;
+    font-size: 45px;
+    font-weight: 900;
+}
+.container-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills-section {
+    width: 500px;
+    background-color: #191d28;
+    padding: 30px 30px 50px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+.skills-section *{
+    color: #f4f7f8;
+    font-weight: 500;
+}
+.skills-section h1{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+}
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+
+    border: 2px solid #fcd07a;
+
+    border-radius: 20px;
+
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #fcd07a;
+
+
+}
+.all-skills:not(:last-child){
+    margin-bottom: 30px;
+}
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 75%;
+    }
+}
+#javascript-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+    100%{
+        width: 72%;
+    }
+}
+#react-bar{
+    animation: react-fill 2s forwards;
+}
+@keyframes react-fill{
+    100%{
+        width: 62%;
+    }
+}
