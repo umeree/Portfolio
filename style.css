@@ -103,11 +103,13 @@ body{
     transition: .6s;
 }
 .home-sci {
-    position: absolute;
+    position: relative;
     bottom: 20px;
     width: 150px;
     background-color: transparent;
     justify-content: space-between;
+    margin-top: 50px;
+    padding: 0 10%;
 }
 .home-sci a{
     display: inline-flex;
