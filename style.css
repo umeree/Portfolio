@@ -42,6 +42,7 @@ body{
     color: #fcd07a;
 } 
 #home {
+    width: 100%;
     background-color: #191d28;
     display: flex;
     height: 50vh;
@@ -330,12 +331,13 @@ body{
       float: none;
     }
   } */
-.navbar .menu-bar i{
+  .header .menu-bar i{
     color: #fcd07a;
     font-size: 22px;
-    display: none;
+    margin-left: 90%;
+    /* display: none; */
 }
-  @media (max-width: 980px) {
+  /* @media (max-width: 980px) {
     .navbar ul {
         position: fixed;
         top: 80px; 
@@ -358,4 +360,80 @@ body{
         color: #fcd07a;
         transition: .5s;
     }
+  } */
+  @media (min-width: 992px) {
+    /* Adjust styles for desktop screens */
+    .home-content h1 {
+      font-size: 36px;
+    }
+  
+    .home-content h3 {
+      font-size: 28px;
+    }
+  
+    .home-content p {
+      font-size: 20px;
+    }
+  
+    .btn {
+      font-size: 20px;
+      padding: 14px 28px;
+    }
   }
+  @media (min-width: 768px) {
+    /* Adjust styles for tablets and larger screens */
+    .home-content h1 {
+      font-size: 25px;
+    }
+  
+    .home-content h3 {
+      font-size: 20px;
+    }
+  
+    .home-content p {
+      font-size: 14px;
+    }
+  
+    .btn {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  
+    .home-img img {
+      width: 368px;
+      height: 369px;
+    }
+  }
+
+  @media (min-width: 410px) {
+    /* Adjust styles for tablets and larger screens */
+    #home{
+        width: 100%;
+    }
+    .home-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .home-content h1 {
+      font-size: 22px;
+    }
+  
+    .home-content h3 {
+      font-size: 18px;
+    }
+  
+    .home-content p {
+      font-size: 14px;
+    }
+  
+    .btn {
+      font-size: 12px;
+      padding: 10px 20px;
+    }
+  
+    .home-img img {
+      width: 320px;
+      height: 321px;
+    }
+  }
+  
