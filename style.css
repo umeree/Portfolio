@@ -338,7 +338,7 @@ body{
   @media (max-width: 980px) {
     .navbar ul {
         position: fixed;
-        top: 80px; 
+        /* top: 80px;  */
         background: #161922;
         left: 0%;
         width: 100%;
