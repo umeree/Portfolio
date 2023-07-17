@@ -7,22 +7,33 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
     <title>Portfolio</title>
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Umer</a>
-        <label for="" class="menu-bar">
-            <i class="fa fa-bars"></i>
-        </label>
-        <nav class="navbar">
+        <nav>
+            <label for="" class="logo">
+                Umer
+            </label>
             <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#about" >About</a></li>
-            <li><a href="#services" >Services</a></li>
-            <li><a href="#skills" >Skills</a></li>
-            <li><a href="/contact.html" >Contact</a></li>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="/contact.html">Contact</a></li>
             </ul>
+            <label id="icon">
+                <i class="fa fa-bars"></i>
+            </label>
         </nav>
     </header>
     <section id="home">
