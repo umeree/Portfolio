@@ -7,59 +7,50 @@
 }
 body{
     background-color: #161922;
-    font-family: ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #f4f7f8;
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-}.header nav {
+}
+.header {
+    padding: 0 10%;
     height: 80px;
     width: 100%;
-    /* background: #191d28 ; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header ul {
+    display: flex;
+    padding: 10px;
+}
+.header ul li {
+    padding: 10px;
+}
+.header ul li a {
+    color: #f4f7f8;
+    font-size: 24px;
+}
+.header ul li a.active {
+    color: #fcd07a;
+}
+.header ul li a:hover{
+    color: #fcd07a;
 }
 .header .logo {
-    font-size: 35px;
-    font-weight: bold;
-    color: #fcd07a;
-    line-height: 80px;
-    padding: 0 10%;
+    margin-right: 150px;
+    /* padding-right: 50px; */
 }
-nav ul {
-    float: right;
-    margin-right: 40px;
-}
-nav li {
-    display: inline-block;
-    margin: 0 8px;
-    line-height: 80px;
-}
-nav a {
-    color: #fcd07a;
-    font-size: 18px;
-    text-transform: uppercase;
-    border: 1px solid transparent;
-    padding: 7px 10px;
-    border-radius: 3px;
-}
-a.active,a:hover{
-    border: 1px solid #fcd07a;
-    transform: .5s;
-}
-nav #icon {
-    color: #fcd07a;
-    font-size: 30px;
-    line-height: 80px;
-    float: right;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+.head-logo .logo h1{
+    margin-right: 50px;
 }
 #home {
     /* width: 100%; */
     background-color: #191d28;
     display: flex;
-    /* height: 60vh; */
+    height: 50vh;
     align-items: center;
     padding: 0 10%;
 }
@@ -87,8 +78,8 @@ nav #icon {
 
 }
 .btn-section {
-    width: 200px;
-    height: 50px;
+    width: 180px;
+    height: 40px;
     background-color: transparent;
     border-radius: 20px;
     
@@ -164,7 +155,7 @@ nav #icon {
     /* height: 50vh; */
     /* align-items: center; */
     padding: 0 10%;
-    margin: 20px;
+    /* margin: 20px; */
     /* width: 100%; */
 }
 .service-content {
@@ -181,13 +172,14 @@ nav #icon {
 }
 .service-section{
     display: flex;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     /* background-color: black; */
     /* justify-content: space-around; */
     justify-content: space-around;
 
 }
 .service1 {
+    font-size: 28px;
     margin: 20px;
     padding: 60px;
     width: 250px;
@@ -199,6 +191,7 @@ nav #icon {
     box-shadow: 0 20px 30px rgba(0,0,0,0.2);
 }
 .service2 {
+    font-size: 28px;
     margin: 20px;
     width: 250px;
     padding: 60px;
@@ -208,6 +201,7 @@ nav #icon {
     box-shadow: 0 20px 30px rgba(0,0,0,0.2);
 }
 .service3 {
+    font-size: 28px;
     margin: 20px;
     padding: 60px;
     width: 250px;
@@ -223,12 +217,12 @@ nav #icon {
     align-items: center;
 }
 .service1 .service1-content h1 {
-    padding: 100px 10px 10px 10px;
+    padding: 60px 10px 10px 10px;
     color: #fcd07a;
 }
 .service1 .service1-content p{
-    font-size: 11px;
-    padding: 10px;
+    font-size: 14px;
+    /* padding: 10px; */
 }
 .service2 .service2-content{
     display: flex;
@@ -237,11 +231,11 @@ nav #icon {
     align-items: center;
 }
 .service2 .service2-content h1 {
-    padding: 100px 10px 10px 10px;
+    padding: 60px 10px 10px 10px;
     color: #fcd07a;
 }
 .service2 .service2-content p{
-    font-size: 11px;
+    font-size: 14px;
     padding: 10px;
 }
 #skills{
@@ -260,6 +254,7 @@ nav #icon {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 .skills-section {
     width: 500px;
@@ -356,6 +351,29 @@ nav #icon {
       padding: 14px 28px;
     }
 }
+footer {
+    display: flex;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #191d28;
+    /* width: 100%; */
+    padding: 0 10%;
+    justify-content: space-around;
+    align-items:center;
+}
+/* footer .home-sci{
+    margin-right: 20px;
+} */
+/* hr { */
+    /* display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+  } */
+
 @media (min-width: 768px) and (max-width: 991px) {
     .home-content h1 {
         font-size: 24px;
@@ -397,9 +415,10 @@ nav #icon {
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin: 0px;
+        height: 91vh;
+        /* margin: 0px; */
         background-color: none;
-        margin-left: 20%;
+        /* margin-left: 5%; */
     }
     #home .home-content {
         justify-content: center;
@@ -436,7 +455,7 @@ nav #icon {
         height: 50vh;
         align-items: center;
         padding: 0 10%;
-        margin-left: 20%;
+        /* margin-left: 5%; */
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -445,9 +464,10 @@ nav #icon {
     #services {
         margin-top: 260px;
         width: 100%;
-        margin-left: 20%;
+        /* margin-left: 5%; */
         display: flex;
         flex-direction: column;
+        /* margin-left: 20px; */
     }
     .service-content h1 {
         margin-left: 40px;
@@ -462,56 +482,27 @@ nav #icon {
     .service-section {
         display: flex;
         flex-direction: column;
+        /* margin-bottom: 10px; */
 
     }
     #skills {
         width: 100%;
-        margin-left: 20%;
+        /* margin-left: 10%; */
     }
     .skills-content h1 {
         margin-left: 40px;
         font-size: 28px;
     }
-    @media (max-width: 1048px) {
-        label.logo{
-            font-size: 32px;
-            padding-left: 60px;
-        }
-        nav ul{
-            margin-right: 20px;
-        }
-        nav a {
-            font-size: 17px;
-        }    
+    footer {
+        width: 100%;
+        justify-content: space-between;
     }
-    @media (max-width: 909px) {
-        nav #icon {
-            display: block;
-            margin-left: 180px;
-        }
-        nav ul {
-            position: fixed;
-            height: 100%;
-            background: #161922;
-            width: 100%;
-            top: 80px;
-            left: 0;
-            text-align: center  ;
-            transition: all .5s;
-        }
-        nav li {
-            display: block;
-            margin: 50px 0;
-            line-height: 30px;
-        }  
-        nav a {
-            font-size: 20px;
-        }
-        a.active,a:hover {
-            border: none;
-            color: #f4f7f8;
-        }    
-        nav ul.show{
-            left: 0;
-        }  
+    .header{
+        display: none;
     }
+    footer .home-sci{
+        display: flex;
+        /* flex-direction: column; */
+        /* margin-right: 20px; */
+    }
+}

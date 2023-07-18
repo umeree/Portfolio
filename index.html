@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
             $('#icon').click(function(){
@@ -20,21 +20,19 @@
 </head>
 <body>
     <header class="header">
-        <nav>
-            <label for="" class="logo">
-                Umer
-            </label>
-            <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
-            <label id="icon">
-                <i class="fa fa-bars"></i>
-            </label>
-        </nav>
+        <div class="head-logo">
+            <div class="logo">
+                <h1>Umer</h1>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        
     </header>
     <section id="home">
         <div class="home-content">
@@ -45,7 +43,7 @@
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
             <div class="btn-section">
-                <a href="#" class="btn">Contact Me</a>
+                <a href="/contact.html" class="btn">Contact Me</a>
             </div>
             <!-- <div class="home-sci">
                 <a href="#"><i class='bx bxl-facebook'></i></a>
@@ -66,7 +64,7 @@
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
             <div class="btn-section">
-                <a href="#" class="btn">Contact Me</a>
+                <a href="/contact.html" class="btn">Contact Me</a>
             </div>
             <!-- <div class="home-sci">
                 <a href="#"><i class='bx bxl-facebook'></i></a>
@@ -156,11 +154,17 @@
             </div>
         </div>
     </section>
+    <!-- <hr style="width:100%"> -->
     <footer>
         <div class="home-sci">
-                <a href="#"><i class='bx bxl-facebook'></i></a>
-                <a href="#"><i class='bx bxl-linkedin' ></i></i></a>
-                <a href="#"><i class='bx bxl-github' ></i></i></a>
+                <a href="https://web.facebook.com/profile.php?id=100011183440863"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.linkedin.com/in/muhammed-umer-150178225/"><i class='bx bxl-linkedin' ></i></i></a>
+                <a href="https://github.com/umeree"><i class='bx bxl-github' ></i></i></a>
+            </div>
+            <div class="information">
+                <h2>Umer Nadeem</h2>
+                <h4>Islamabad, Pakistan</h4>
+                <h4>+92 306 9457225</h4>
             </div>
     </footer>
 </body>
